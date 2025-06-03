@@ -1,0 +1,119 @@
+.navbar{
+    ul.navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fbfbfb;
+        padding: 24px 0;
+        font-size: 28px;
+        height: 90px;
+        gap: 8px;
+
+        @media (max-width:576px){
+            padding-left:0;
+            flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+        }
+      
+        li.nav-item {
+
+            @media (max-width:576px){
+                margin-right: 0px;
+                margin-left: 0px;
+                /* width: 100%; */
+                border-bottom: 1px solid #fff;
+                text-align: center;
+            }
+
+            a{
+                display: block;
+                height: 42px;
+                line-height: 42px;
+                padding: 0px 20px;
+                color: #000;
+                transition: all 0.3s;
+                
+                &:hover {
+                    background-color: #736868;
+                    cursor: pointer;
+                    
+                }
+
+                &:active{
+                    background-color: #e39797;
+                    transform: scale(0.8);
+                }
+            }
+            
+        }
+    }
+}
+
+
+// pagination
+// * ------ 請修改此處 ------ */
+.pagination-list .page,
+.pagination-list .arrow {
+	transition: all 0.3s;
+	&:hover{
+	// 觸碰時加上背景顏色、文字顏色、pointer 的小拇指。
+		background-color: #8b62b1;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	&:active{
+	//     加上背景顏色、縮小 0.8 倍。
+		background-color: #f0f0f0;
+		transform: scale(0.8);
+	}
+}
+  
+/* ------ 修改結束 ------ */
+  
+.pagination-list {
+	display: flex ;
+	align-items: center;
+	justify-content: center;
+
+	gap: 8px;
+	padding: 6px 14px;
+	margin-bottom: 60px;
+	background: #fff;
+	border-radius: 100px;
+	width: 328px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+    @media screen and (max-width: 768px){
+		margin-bottom: 60px;
+	}
+}
+  
+// .pagination-list a {
+//     text-decoration: none;
+// }
+  
+.pagination-item,
+.pagination-item.arrow,
+.pagination-item.dots {
+    padding: 4px 8px;
+    color: #444;
+    border-radius: 6px;
+}
+  
+.pagination-item.active {
+    color: #1a5ddc;
+    font-weight: bold;
+    background-color: #e6f0ff;
+}
+  
+.pagination-item.dots {
+    cursor: default;
+    color: #888;
+}
+
+.b-Line{
+	border-top: 1px solid #67757D;
+}
+
+
